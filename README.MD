@@ -8,7 +8,7 @@
 
 ### Sua forma: 👇🏼
 
-...
+<img src="https://user-images.githubusercontent.com/90796934/140245482-6310745f-079b-41f0-95e9-5491713e9939.PNG">
 
 ## ℹ Projeto feito para fins educativos e treino de aprendizagem!
 
