@@ -2,6 +2,8 @@
 
 ## ℹ Site básico para planejamento de viagem.
 
+<p>Para acessa-lo <a href="https://tallesvini.github.io/calculadora-viagem-js/">Clique aqui!</a></p>
+
 #### Com contador estimado de tempo de viagem, litros de combustíveis e valores.
 
 ### Nesse projeto foi usado CSS, HTML e JS puro. 😉
