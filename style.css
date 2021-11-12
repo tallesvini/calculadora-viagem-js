@@ -5,8 +5,17 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-image: linear-gradient(to right, #0476D9 , #05AFF2);
+    animation-name: background;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     height: 100vh;
+}
+
+@keyframes background {
+    100% { background-color: #055902;}
+    50% { background-color: #23A60F;}
+    0% { background-color: #067302;}
 }
 
 /*geral*/
@@ -19,6 +28,7 @@ body {
     width: 500px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 1px 1px 4px #034201;
 }
 
 .barras h1 {
@@ -29,7 +39,7 @@ body {
     font-weight: lighter;
     text-transform: uppercase;
     font-size: 1.3em;
-    color: #0476D9;
+    color: #034201;
 }
 
 /*inputs*/
@@ -52,8 +62,19 @@ body {
     color: #262626;
 }
 
+#num3 {
+    width: 43%;
+}
+
+#num4 {
+    width: 43%;
+    position: absolute;
+    left: 52%;
+    top: 15.5vh;
+}
+
 input::placeholder {
-    color: #BFBFBF;
+    color: #8C8C8C;
     font-size: .9em;
 }
 
@@ -80,16 +101,15 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
     cursor: pointer;
     color: #ffffff;
-    background-color: #0476D9;
+    background-color: #2EA23F;
     box-shadow: 1px 1px 2px #404040;
 }
 
 .estilo button:hover {
-    background-color: #404040;
+    background-color: #262626;
     color: white;
     transition: .2s;
 }
-
 
 /*caixa de dialogo*/
 .resultados span {
@@ -101,7 +121,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 250px;
     text-align: center;
     color: #ffffff;
-    background-color: #05AFF2;
+    background-color: #262626;
     box-shadow: 1px 1px 5px #404040;
 }
 
