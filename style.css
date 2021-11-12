@@ -64,6 +64,8 @@ body {
 
 #num3 {
     width: 43%;
+    position: absolute;
+    top: 15.5vh;
 }
 
 #num4 {
@@ -143,12 +145,14 @@ input[type=number]::-webkit-outer-spin-button {
     transform: translate(-50%);
     font-weight: lighter;
     color: #ffffff;
+    font-size: .4em;
 }
 
 /*mobile*/
 @media (max-width: 600px) {
     .barras {
         width: 90vw;
+        top: 8vh;
     }
 
     .barras h1 {
