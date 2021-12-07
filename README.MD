@@ -6,7 +6,7 @@
 
 #### Com contador estimado de tempo de viagem, litros de combustíveis e valores.
 
-### Nesse projeto foi usado CSS, HTML, JS e jQuery. 😉
+### Nesse projeto foi usado Css, Html, Js e jQuery. 😉
 
 ### Sua forma: 👇🏼
 
