@@ -63,7 +63,6 @@ $('input').keyup(e => {
             resultado1.text(final + " aprox.")
             resultado2.text(combustível.toFixed(2) + " Litros")
             resultado3.text(gastoCombustível.toFixed(2) + " Reais")
-        
         })
 
         //reset------
