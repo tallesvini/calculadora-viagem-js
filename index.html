@@ -11,18 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap" rel="stylesheet">    
     
+    <script src="/js/jquery.js"></script>
+
     <title>Consumo Viagem</title>
 </head>
 <body>
     <div class="barras estilo">
         <h1>Calcule sua viagem</h1>
-        <div class="caixas">
+        <form class="caixas">
             <input type="number" placeholder="Distancia..." id="num1">
             <input type="number" placeholder="Velocidade..." id="num2">
             <input type="number" placeholder="Preço Gasolina..." id="num3">
             <input type="number" placeholder="Km/L..." id="num4">
-        </div>
-            <button onclick="somar()">Resultado</button>
+        </form>
+            <button id="botao">Resultado</button>
+            <button id="reset">Reset</button>
         <div class="resultados">
             <span id="resultado-1">Tempo de viagem é: </span>
             <span id="resultado-2">Litros de combustível: </span>
@@ -30,8 +33,8 @@
         </div>
     </div>
     <footer>
-        <h6 class="final">Copyright 2021 Talles Vinicius - Todos os direitos reservados</h6>
+        <h6 class="final">Copyright © 2021 TM Code - Todos os direitos reservados</h6>
     </footer>
 </body>
-<script src="script.js"></script>
+<script src="/js/script.js"></script>
 </html>

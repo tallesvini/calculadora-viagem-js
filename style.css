@@ -13,9 +13,9 @@ body {
 }
 
 @keyframes background {
-    100% { background-color: #055902;}
-    50% { background-color: #23A60F;}
-    0% { background-color: #067302;}
+    100% { background-color: #9530D9;}
+    50% { background-color: #C580F2;}
+    0% { background-color: #DFB3F2;}
 }
 
 /*geral*/
@@ -28,7 +28,7 @@ body {
     width: 500px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 1px 1px 4px #034201;
+    box-shadow: 1px 1px 4px #3B0273;
 }
 
 .barras h1 {
@@ -39,7 +39,7 @@ body {
     font-weight: lighter;
     text-transform: uppercase;
     font-size: 1.3em;
-    color: #034201;
+    color: #3B0273;
 }
 
 /*inputs*/
@@ -58,8 +58,8 @@ body {
     margin-bottom: 2vh;
     padding: 5px;
     border-radius: 5px;
-    border: solid 1px #8C8C8C;
-    color: #262626;
+    border: solid 1px #B080F2;
+    color: #3B0273;
 }
 
 #num3 {
@@ -76,7 +76,7 @@ body {
 }
 
 input::placeholder {
-    color: #8C8C8C;
+    color: #C4A2F2;
     font-size: .9em;
 }
 
@@ -93,24 +93,36 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*botão*/
 .estilo button {
-    position: absolute;
-    top: 35vh;
-    left: 50%;
-    transform: translate(-50%);
     height: 5vh;
-    width: 14vw;
+    width: 120px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     color: #ffffff;
-    background-color: #2EA23F;
-    box-shadow: 1px 1px 2px #404040;
+    box-shadow: 1px 1px 3px #3B0273;
 }
 
-.estilo button:hover {
-    background-color: #262626;
-    color: white;
+#botao:hover,
+#reset:hover {
+    background-color: #9530D9;
+    color: #FFFFFF;
     transition: .2s;
+}
+
+#botao {
+    position: absolute;
+    top: 35vh;
+    left: 30%;
+    transform: translate(-30%);
+    background-color: #C580F2;
+}
+
+#reset {
+    position: absolute;
+    top: 35vh;
+    left: 70%;
+    transform: translate(-70%);
+    background-color: #C580F2;
 }
 
 /*caixa de dialogo*/
@@ -122,9 +134,9 @@ input[type=number]::-webkit-outer-spin-button {
     height: 7vh;
     width: 250px;
     text-align: center;
-    color: #ffffff;
-    background-color: #262626;
-    box-shadow: 1px 1px 5px #404040;
+    color: #FFFFFF;
+    background-color: #9530D9;
+    box-shadow: 1px 1px 5px #3B0273;
 }
 
 #resultado-1 {
@@ -144,15 +156,15 @@ input[type=number]::-webkit-outer-spin-button {
     left: 50%;
     transform: translate(-50%);
     font-weight: lighter;
-    color: #ffffff;
-    font-size: .4em;
+    color: #FFFFFF;
+    font-size: .6em;
 }
 
 /*mobile*/
 @media (max-width: 600px) {
     .barras {
         width: 90vw;
-        top: 8vh;
+        top: 5vh;
     }
 
     .barras h1 {
@@ -162,5 +174,9 @@ input[type=number]::-webkit-outer-spin-button {
     .estilo button {
         width: 20vw;
         height: 6vh;
+    }
+
+    .final {
+        font-size: .5em;
     }
 }

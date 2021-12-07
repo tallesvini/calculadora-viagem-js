@@ -1,24 +1,22 @@
-let n1 = document.querySelector('#num1')
-let n2 = document.querySelector('#num2')
-let n3 = document.querySelector('#num3')
-let n4 = document.querySelector('#num4')
+$('input').keyup(e => {
+        
+        const distância = $('#num1').val()
+        const velocidade = $('#num2').val()
+        const alcool = $('#num3').val()
+        const km = $('#num4').val()
+    
+        let resultado1 = $('#resultado-1')
+        let resultado2 = $('#resultado-2')
+        let resultado3 = $('#resultado-3')
 
-let resultado1 = document.querySelector('#resultado-1')
-let resultado2 = document.querySelector('#resultado-2')
-let resultado3 = document.querySelector('#resultado-3')
-
-    function somar() {
-        const distância = parseFloat(n1.value)
-        const velocidade = parseFloat(n2.value)
-        const alcool = parseFloat(n3.value)
-        const km = parseFloat(n4.value)
-
+    
         // tempo de viagem -------------
 
         function time(distância, velocidade) {
             return distância / velocidade;
         } 
         let tempo = time(distância, velocidade);
+        console.log(tempo)
 
         function sec(tempo, minutes, hours) {
             return tempo * minutes * hours;
@@ -46,16 +44,12 @@ let resultado3 = document.querySelector('#resultado-3')
         let final = result(horas, 10, minutos);
 
 
-        resultado1.innerHTML = final + ' aprox.'
-
         // litros de combustível---------
         let consumo = function(distância, médiaConsumo) {
             return distância / médiaConsumo;
         }
         let combustível = consumo(distância, km);
         
-        
-        resultado2.innerHTML = combustível.toFixed(2) + ' Litros'
 
         // Reais de abastecimento
         let gastos = (combustível, alcool) => {
@@ -63,6 +57,25 @@ let resultado3 = document.querySelector('#resultado-3')
         }
         let gastoCombustível = gastos(combustível, alcool);
         
+
+        // resultado------------ 
+        $('#botao').click(e => {
+            resultado1.text(final + " aprox.")
+            resultado2.text(combustível.toFixed(2) + " Litros")
+            resultado3.text(gastoCombustível.toFixed(2) + " Reais")
         
-        resultado3.innerHTML = gastoCombustível.toFixed(2) + ' Reais'     
-}
+        })
+
+        //reset------
+        const reset1 = $('#resultado-1').text()
+        const reset2 = $('#resultado-2').text()
+        const reset3 = $('#resultado-3').text()
+        
+        $('#reset').click(e => {
+            $('.caixas')[0].reset()
+            resultado1.text(reset1)
+            resultado2.text(reset2)
+            resultado3.text(reset3)
+        })
+
+})
